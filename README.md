@@ -71,4 +71,4 @@ then press ctrl + x, y, enter to exit the nano editor
 
 8. the more adept among you will replace step 1 with:
 
-   sudo echo your_hostname >/etc/new_hostname
+   sudo echo your_new_hostname >/etc/new_hostname
