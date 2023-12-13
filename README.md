@@ -24,6 +24,7 @@ Tested on my raspberrypi and everything works well.
 # In case you're lost, here are the steps:
 
 1. create the file: sudo nano /etc/new_hostname
+   
 (in the file, enter your hostname here, following the rules of setting hostnames on rpi, search it up)
 
 then press ctrl + x, y, enter to exit the nano editor
