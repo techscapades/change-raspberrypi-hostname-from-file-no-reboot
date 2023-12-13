@@ -40,9 +40,11 @@ then press ctrl + x, y, enter to exit the nano editor
 set +e
 
 CURRENT_HOSTNAME=`cat /etc/hostname | tr -d " \t\n\r"`
+
 NEW_HOSTNAME=`cat /etc/new_hostname | tr -d " \t\n\r"`
 
 echo `cat /etc/new_hostname | tr -d "\t\n\r"` >/etc/hostname
+
 sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$NEW_HOSTNAME/g" /etc/hosts
 
 exit 0
@@ -56,7 +58,8 @@ then press ctrl + x, y, enter to exit the nano editor
 5. confirm the changes have been made:
    
      cat /etc/hosts
+   
      cat /etc/hostname
 
-6. Reboot your raspberrypi for changes to take place
+7. Reboot your raspberrypi for changes to take place
 
