@@ -18,3 +18,5 @@ exit 0
 
 
 you can add a 'reboot now' command to make the changes immediate
+I created a file called '/etc/new_hostname' to store the new hostname
+Tested on my raspberrypi and everything works well
