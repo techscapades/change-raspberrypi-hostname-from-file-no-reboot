@@ -69,3 +69,6 @@ then press ctrl + x, y, enter to exit the nano editor
 
 7. Reboot your raspberrypi for changes to take place
 
+8. the more adept among you will replace step 1 with:
+
+   sudo echo your_hostname >/etc/hostname
