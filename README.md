@@ -25,9 +25,11 @@ Tested on my raspberrypi and everything works well.
 
 1. create the file: sudo nano /etc/new_hostname
 (in the file, enter your hostname here, following the rules of setting hostnames on rpi, search it up)
+
 then press ctrl + x, y, enter to exit the nano editor
 
 2. create the bash script: sudo nano change_hostname.sh
+
 (copy the bash script I included above into the file and change the path_to_new_hostname to /etc/new_hostname)
 
 #!/bin/bash
@@ -49,6 +51,7 @@ then press ctrl + x, y, enter to exit the nano editor
 4. run the bash script: sudo bash change_hostname.sh
 
 5. confirm the changes have been made:
+   
      cat /etc/hosts
      cat /etc/hostname
 
