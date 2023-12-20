@@ -42,8 +42,8 @@ then press ctrl + x, y, enter to exit the nano editor
 
 6. if you have services you want to access from your_hostname.local,
    put systemctl restart avahi-daemon before exit 0 in the script and
-   you'll have to wait a while before changes take place. You can also put systemctl daemon-reload to reload all services.
-   I have uploaded the scripts for both already
+   you'll have to wait a while before changes take place.
+   I have uploaded the script for it already.
 
 # NOTES: 
 
