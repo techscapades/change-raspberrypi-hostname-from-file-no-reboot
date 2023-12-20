@@ -39,6 +39,9 @@ then press ctrl + x, y, enter to exit the nano editor
 
      cat /proc/sys/kernel/hostname
 
-6. the more adept among you will replace step 1 with:
+
+6. if you have services you want to access from your_hostname.local, put sudo systemctl restart avahi-daemon before exit 0 in the script and you'll have to wait a while before changes take place
+
+7. the more adept among you will replace step 1 with:
 
    sudo echo your_new_hostname >/etc/new_hostname
