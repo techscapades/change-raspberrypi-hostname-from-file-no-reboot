@@ -4,8 +4,8 @@ https://raspberrypi.stackexchange.com/questions/114400/how-to-set-the-hostname-v
 
 # USE CASES
 While you can always set the hostname when the image is burnt onto the SD card or using raspi-config, this process is slow
-and its not efficient if you want to give hundreds of raspberrypis their own unique hostname without the nees for a reboot , thus this script is for the 
-process to be done more programmatically, ideally included in a greater bash script which sets up the pi and everything else.
+and its not efficient if you want to give hundreds of raspberrypis their own unique hostname # without the need for a reboot 
+, thus this script is for the process to be done more programmatically, ideally included in a greater bash script which sets up the pi and everything else.
 Alternatively this script can be used to dynamically change the hostname when triggered through custom frontend software
 
 
