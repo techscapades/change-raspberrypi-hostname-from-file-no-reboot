@@ -41,7 +41,7 @@ then press ctrl + x, y, enter to exit the nano editor
 
 
 6. if you have services you want to access from your_hostname.local,
-   put sudo systemctl restart avahi-daemon before exit 0 in the script and
+   put systemctl restart avahi-daemon before exit 0 in the script and
    you'll have to wait a while before changes take place, I have uploaded the script
    with it already
 
