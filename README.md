@@ -72,8 +72,6 @@ then press ctrl + x, y, enter to exit the nano editor
 
      cat /proc/sys/kernel/hostname
 
-7. Reboot your raspberrypi for changes to take place
-
-8. the more adept among you will replace step 1 with:
+6. the more adept among you will replace step 1 with:
 
    sudo echo your_new_hostname >/etc/new_hostname
