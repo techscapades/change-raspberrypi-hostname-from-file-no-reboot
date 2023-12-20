@@ -8,27 +8,9 @@ and its not efficient if you want to give hundreds of raspberrypis their own uni
 process to be done more programmatically, ideally included in a greater bash script which sets up the pi and everything else.
 Alternatively this script can be used to dynamically change the hostname when triggered through custom frontend software
 
-Here's the bash script:
-
-`
-#!/bin/bash
-
-set +e
-
-CURRENT_HOSTNAME=`cat /etc/hostname | tr -d " \t\n\r"`
-
-NEW_HOSTNAME=`cat /path_to_new_hostname_file | tr -d " \t\n\r"`
-
-echo `cat /path_to_new_hostname_file | tr -d "\t\n\r"` >/etc/hostname
-
-sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$NEW_HOSTNAME/g" /etc/hosts
-
-echo `cat /etc/new_hostname | tr -d "\t\n\r"` >/proc/sys/kernel/hostname
-
-exit 0
-`
 
 I created a file called '/etc/new_hostname' to store the new hostname
+
 Tested on my raspberrypi and everything works well.
 
 # In case you're lost, here are the steps:
@@ -42,25 +24,6 @@ then press ctrl + x, y, enter to exit the nano editor
 2. create the bash script: sudo nano change_hostname.sh
 
 (copy the bash script I included above into the file and change the path_to_new_hostname to /etc/new_hostname)
-
-
-#!/bin/bash
-
-set +e
-
-CURRENT_HOSTNAME=`cat /etc/hostname | tr -d " \t\n\r"`
-
-NEW_HOSTNAME=`cat /etc/new_hostname | tr -d " \t\n\r"`
-
-echo `cat /etc/new_hostname | tr -d "\t\n\r"` >/etc/hostname
-
-sed -i "s/127.0.1.1.*$CURRENT_HOSTNAME/127.0.1.1\t$NEW_HOSTNAME/g" /etc/hosts
-
-echo `cat /etc/new_hostname | tr -d "\t\n\r"` >/proc/sys/kernel/hostname
-
-exit 0
-
-
 
 then press ctrl + x, y, enter to exit the nano editor
 
