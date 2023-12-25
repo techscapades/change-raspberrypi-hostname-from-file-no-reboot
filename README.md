@@ -1,5 +1,5 @@
 # change raspberrypi hostname from file no reboot
-A simple bash script that changes the hostname of the raspberrypi from the contents of a file, modified from this thread:
+A simple bash script that changes the hostname of the raspberrypi from the contents of a file without the needing to reboot after, modified from this thread:
 https://raspberrypi.stackexchange.com/questions/114400/how-to-set-the-hostname-via-boot-config-before-first-boot
 
 # USE CASES
